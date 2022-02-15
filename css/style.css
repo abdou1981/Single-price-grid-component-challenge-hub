@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Karla', sans-serif;
+  height: 800px;
+  background-color: var(--Light-Gray);
+  position: relative;
+}
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+main {
+  width: 580px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  padding: 25px;
+}
+header .title {
+  color: var(--Cyan);
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+header .sub-title {
+  color: var(--Bright-Yellow);
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+header .parag {
+  color: var(--Grayish-Blue);
+  padding-bottom: 20px;
+}
+.plan {
+  background-color: var(--Cyan);
+}
+.plan,
+.Advan {
+  width: 50%;
+  padding: 20px;
+  border: solid 2px hsl(179, 26%, 49%);
+}
+h3 {
+  color: white;
+  padding-bottom: 15px;
+}
+.plan div.sub-title {
+  color: var(--Light-Gray);
+  margin-bottom: 15px;
+}
+.plan div.sub-title span:first-of-type {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.plan div.sub-title span:last-of-type {
+  position: relative;
+  top: -5px;
+  margin-left: 7px;
+}
+.plan p {
+  color: white;
+  padding-bottom: 15px;
+}
+button {
+  width: 100%;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  padding: 15px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.Advan {
+  background-color: hsl(179, 62%, 47%);
+  border-left: none;
+}
+.Advan ul {
+  list-style: none;
+}
+.Advan li {
+  color: var(--Light-Gray);
+  padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  main {
+    width: 300px;
+    flex-direction: column;
+  }
+  .plan,
+  .Advan {
+    width: 100%;
+  }
+  .Advan {
+    border-left: solid 2px hsl(179, 26%, 49%);
+    border-top: none;
+  }
+}
